@@ -248,6 +248,7 @@ class _StoryPageState extends ConsumerState<StoryPage> {
     return Container(
       padding: EdgeInsets.all(16),
       child: AnimatedTextKit(
+        key: ValueKey(storyNode),
         animatedTexts: [
           TypewriterAnimatedText(
             storyNode.text,
